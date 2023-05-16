@@ -1,0 +1,79 @@
+@font-face{/*1*/
+    font-family: Bouncy-Thin-PERSONAL_USE_ONLY;
+    src: url(/fonts/Bouncy-Thin-PERSONAL_USE_ONLY.otf);
+
+}
+
+@font-face{/*1*/
+    font-family: ZiboulateurDEMO-Regular;
+    src: url(/fonts/ZiboulateurDEMO-Regular.otf);
+
+}
+
+
+body {
+    width: 1200px; height: 1000px;
+    background-color: #5464bf;
+    background-image: url(/ACERCADEMI/img/fondo.jpg);
+    margin: auto;
+    float: center;
+    padding-left: 18%;
+    
+}
+
+header {
+    width: 900px; 
+    height: 530px;
+    background-color: #aab3bf;
+    text-align: center;
+    
+    
+}
+
+#Principal {
+    font-size: 100px;
+    color: #7dbf4d;
+    text-align: center;
+    text-shadow: 0.2em 0.2em 0.1em rgb(43, 26, 2);
+    font-family: Bouncy-Thin-PERSONAL_USE_ONLY;
+    
+}
+
+.identico {
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: -400px;
+    text-align: center;
+   
+}
+
+.onedi{
+    margin: auto;
+    float: center;
+    padding-left: 1px;
+    padding-top: 130px;
+}
+
+.redes{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    padding-top: 550px;
+}
+
+nav {
+    width: 900px; 
+    height: 150px;
+    background-color: rgb(248, 188, 188);
+    padding-left: 1px;
+    padding-top: 1px;
+}
+
+#nav {
+    font-size: 16px;
+}
+
+main {
+    width: 900px;
+    height: 350px;
+    background-color: #aab3bf;
+    font-size: 20px;
+}

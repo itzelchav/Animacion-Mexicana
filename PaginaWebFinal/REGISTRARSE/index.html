@@ -1,0 +1,101 @@
+<?php
+
+
+
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <img src="img/storyboard.JPG" alt="">
+    </header>
+    
+    <main>
+        <div>
+            <form class="alumnos" action="guardar.php" method="post">
+                <ul>
+                    <li>
+                        <h2>Registro</h2>
+                        <span class="required_notification">*Datos requeridos</span>
+                    </li>
+
+                    <li>
+                        <label for="Nombre">
+                         Nombre:
+                        </label>
+                          <input type="text" name="Nombre" placeholder="Nombre" value="" maxlenght="30" required>
+                        <span class="form_hint">Formato correcto "Yolanda"</span>
+                    </li>
+
+                    
+                    <li>
+                        <label for="Apellidos">
+                         Apellidos:
+                        </label>
+                          <input type="text" name="Apellidos" placeholder="Apellidos" value="" maxlenght="30" required>
+                        <span class="form_hint">Formato correcto "Moreno"</span>
+                    </li>
+
+                    <li>
+                        <label for="Correo">
+                         Correo:
+                        </label>
+                          <input type="email" name="Correo" placeholder="Correo" value="" maxlenght="30" required>
+                        <span class="form_hint">Formato correcto "alumno@gmail.com"</span>
+                    </li>
+
+
+                    <li>
+                        De todas las animaciones mencionadas, ¿Cuál es tu favorita?
+                        <select name="Genero" >
+                           <option value="Villanos">Villanos</option>
+                           <option value="Un disfraz para Nicolás">Un disfraz para Nicolás</option>
+                           <option value="Las Leyendas">Las Leyendas</option>
+                           <option value="El ángel en el reloj">El ángel en el reloj</option>
+                           <option value="Los Sustos Ocultos de Frankelda">Los Sustos Ocultos de Frankelda</option>
+                           <option value="Don Gato y su Pandilla">Don Gato y su Pandilla</option>
+                           <option value="El Chavo animado">El Chavo animado</option>
+                           <option value="Una película de huevos">Una película de huevos</option>
+                           <option value="Maya y los tres">Maya y los tres</option>
+                           <option value="La leyenda del Charro Negro">La leyenda del Charro Negro</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        De los animadores mencionados, ¿Cuál es tu favorito?
+                        <select name="Grupos" >
+                           <option value="Carlos Sandoval Bennett">Carlos Sandoval Bennett</option>
+                           <option value="Fernando Ruiz">Fernando Ruiz</option>
+                           <option value="Alfonso Vergara Andrade">Alfonso Vergara Andrade</option>
+                           <option value="Salvador Pruneda">Salvador Pruneda</option>
+                           <option value="Carlos Carrera">Carlos Carrera</option>
+                           <option value="Karla Castañeda">Karla Castañeda</option>
+                           <option value="Jorge Gutiérrez">Jorge Gutiérrez</option>
+                           <option value="Alberto Rodríguez">Alberto Rodríguez</option>
+                           <option value="Alan Ituriel">Alan Ituriel</option>
+                           <option value="Guillermo del Toro">Guillermo del Toro</option>
+                        </select>
+                    </li>
+
+                    
+
+                    <li>
+                        <button class="sumbit" type="sumbit">Enviar</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+</main>
+</body>
+</html>

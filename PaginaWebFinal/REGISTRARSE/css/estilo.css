@@ -1,0 +1,225 @@
+@font-face{/*1*/
+    font-family: Bouncy-Thin-PERSONAL_USE_ONLY;
+    src: url(/fonts/Bouncy-Thin-PERSONAL_USE_ONLY.otf);
+
+}
+
+@font-face{/*1*/
+    font-family: ZiboulateurDEMO-Regular;
+    src: url(/fonts/ZiboulateurDEMO-Regular.otf);
+
+}
+
+/*----------------Sitio o espacio donde se ubica el apuntador-----------------------------*/
+
+*:focus{ outline: none;}
+
+/*----------------Fonts-------------------------------------------------------------------*/
+
+body{
+    width: 1440px; height: 900px; margin: auto; background-color: #f24b4b;
+    font-size: 14px/21px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*----------------Cabecera----------------------------------------------------------------*/
+
+header{ width: 1440px; height: 297px; background-color: cadetblue; }
+
+/*----------------Barra de navegacion-----------------------------------------------------*/
+
+nav{ width: 1440px; height: 41px; background-color: darkcyan; }
+
+ul{
+    margin: 0 auto; 
+    overflow: hidden; 
+    text-align: left; 
+    list-style: none;
+}
+
+nav li a{
+    float: left; background-color: steelblue; color: aliceblue; text-decoration: none; 
+    padding: 10px 14px; display: block;
+}
+
+nav li a:hover{ background-color: darkseagreen;}
+nav li ul{ display: none; min-width: 140px; position: relative; left: 50%;}
+nav li:hover{ display: block; }
+nav li ul{ position: relative;}
+
+/*----------------Main--------------------------------------------------------------------*/
+
+main{
+    width: 1440px; height: 560px; background-color: #f2c299;
+}
+
+/*----------------formulario--------------------------------------------------------------*/
+
+.formulario{ background-color: rgb(58, 153, 248); }
+.alumnos h2, .alumnos label { font-family: ZiboulateurDEMO-Regular; }
+.form_hint, .required_notification{ font-size: 11px;}
+
+/*----------------Listas------------------------------------------------------------------*/
+
+.alumnos ul {
+    width: 750px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+}
+
+.alumnos li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    position: relative; 
+}
+
+/*La pseudo-clase CSS : last-child representa cualquier elemento que es eI 61 timo hijo de un elemento*/
+
+.alumnos li:first-child, .alumnos li:last-child {
+    border-bottom: 1px solid #777; }
+
+/*----------------Cabecera----------------------------------------------------------------*/
+
+.alumnos h2 {
+    margin: 0;
+    display: inline;
+    font-family: ZiboulateurDEMO-Regular;
+}
+
+.required_notification { 
+    color:#bd2222;
+    margin: 5px 0 0 0; 
+    display: inline;
+    float: right; 
+}
+
+/*----------------Elementos de la forma---------------------------------------------------*/
+
+.alumnos label {
+    width: 150px; 
+    margin-top: 3px; 
+    display: inline-block; 
+    float: left; 
+    padding: 3px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.alumnos input {
+    height: 20px;
+    width: 220px; 
+    padding: 5px 8px;
+}
+
+.alumnos textarea {
+    padding: 8px; 
+    width: 300px;
+}
+
+.alumnos button {
+    margin-left: 156px;
+}
+
+.alumnos input, .alumnos textarea {
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 2px;
+    padding-right: 30px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s; 
+}
+
+.alumnos input:focus, .alumnos textarea:focus {
+    background: #fff ;
+    border: 1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+    padding-right: 70px;
+}
+
+/*----------------Validacion y su estilo-------------------------------------------------*/
+
+.alumnos input:focus:invalid, .alumnos textarea:focus:invalid{
+    background: #fff url(img/warning.png) no-repeat 98% center;
+    box-shadow: 0 0 5pxO#d45252;
+    border-color: #b03535;
+}
+
+/*----------------Hint o Ayuda para llenado-----------------------------------------------*/
+
+.form_hint { background: #d45252; /* rojo */
+    border-radius: 3px 3px 3px 3px;
+    color: white; margin-left: 8px;
+    padding: 1px 6px; z-index: 999;
+    position: absolute;
+    display: none;
+}
+
+.form_hint::before {
+    content: "\25C0";
+    color: #d45252; /* rojo */
+    position: absolute;
+    top: 1px;
+    left: -6px;
+}
+
+.alumnos input:focus + .form_hint { display: inline; }
+.alumnos input:required:valid + .form_hint { background: #28921f;}
+.alumnos input:required:valid + .form hint::before { color : #28921f; }
+
+/*----------------Estilo del boton y estados----------------------------------------------*/
+
+button.submit {
+    background-color: #68b12f ;
+    background: -webkit-gradient(linear, left top, left bottom, from( #68b12f) to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+
+button.submit:hover { 
+    opacity:.85;
+    cursor: pointer; 
+}
+
+button.submit:active { 
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+    -webkit-box-shadow: 0 0 10px 5px #356b0b inset;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+/*----------------Pie de pagina-----------------------------------------------------------*/
+
+footer {
+    width: 1440px; 
+    height: 60px;
+    text-align: center;
+    color: rgb(245, 245,245); 
+    background-color: rgb(23, 65, 72); 
+}
